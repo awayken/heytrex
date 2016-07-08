@@ -1,0 +1,35 @@
+{
+  "name": "heytrex",
+  "version": "0.0.0",
+  "description": "Make T-Rex from Dinosaur Comics <http://www.qwantz.com/> say things.",
+  "license": "MIT",
+  "repository": "awayken/heytrex",
+  "author": {
+    "name": "Miles Rausch",
+    "email": "miles@milesrausch.com",
+    "url": "milesrausch.com"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    ""
+  ],
+  "dependencies": {
+    "meow": "^3.7.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.1",
+    "xo": "^0.15.0"
+  }
+}
