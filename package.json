@@ -1,7 +1,7 @@
 {
   "name": "heytrex",
   "version": "0.0.0",
-  "description": "Make T-Rex from Dinosaur Comics <http://www.qwantz.com/> say things.",
+  "description": "Make T-Rex from [Dinosaur Comics](http://www.qwantz.com/) say things.",
   "license": "MIT",
   "repository": "awayken/heytrex",
   "author": {
@@ -23,7 +23,8 @@
   "keywords": [
     "cli-app",
     "cli",
-    ""
+    "qwantz",
+    "trex"
   ],
   "dependencies": {
     "meow": "^3.7.0"
