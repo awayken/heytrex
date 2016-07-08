@@ -1,6 +1,6 @@
 # heytrex [![Build Status](https://travis-ci.org/awayken/heytrex.svg?branch=master)](https://travis-ci.org/awayken/heytrex)
 
-> My brilliant module
+> Make T-Rex from [Dinosaur Comics](http://www.qwantz.com/) say things.
 
 
 ## Install
@@ -15,29 +15,28 @@ $ npm install --save heytrex
 ```js
 const heytrex = require('heytrex');
 
-heytrex('unicorns');
-//=> 'unicorns & rainbows'
+heytrex();
+//=> 'Hi. I'm T-Rex. Read more about me at <http://www.qwantz.com/>.'
+
+heytrex('endorse');
+//=> 'I just can't get enough of your free improved product that now saves society's cooking money.'
 ```
 
 
 ## API
 
-### heytrex(input, [options])
+### heytrex(input)
 
 #### input
 
 Type: `string`
 
-Lorem ipsum.
+What do you want T-Rex to say?
 
-#### options
+Supported:
 
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
+* (nothing)
+* endorse
 
 
 ## CLI
@@ -52,14 +51,11 @@ $ heytrex --help
   Usage
     heytrex [input]
 
-  Options
-    --foo  Lorem ipsum. [Default: false]
-
   Examples
     $ heytrex
-    unicorns & rainbows
-    $ heytrex ponies
-    ponies & rainbows
+    Hi. I'm T-Rex. Read more about me at <http://www.qwantz.com/>.
+    $ heytrex endorse
+    I just can't get enough of your free improved product that now saves society's cooking money.
 ```
 
 
