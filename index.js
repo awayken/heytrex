@@ -1,7 +1,7 @@
 'use strict';
 
 var endorsement = function () {
-	var words = [
+	const words = [
 		['the', 'this', 'a', 'your', 'you'],
 		['wonderful', 'amazing', 'valuable', 'free', 'proven'],
 		['new', 'enhanced', 'improved', 'guaranteed'],
@@ -13,22 +13,26 @@ var endorsement = function () {
 		['cooking', 'bedroom', 'office', 'cellar', 'beachhouse'],
 		['performance', 'results', 'love', 'money', 'sex', 'career']
 	];
+
 	var sentence = 'I just can\'t get enough of';
 
-	for (var i = 0; i < words.length; i++) {
-		sentence = sentence + ' ' + words[i][parseInt((Math.random() * 100), 10) % words[i].length];
+	for (let i = 0; i < words.length; i++) {
+		let wordIndex = parseInt((Math.random() * 100), 10) % words[i].length;
+		sentence += ' ' + words[i][wordIndex];
 	}
 
-	return sentence + '.';
+	sentence += '.';
+
+	return sentence;
 };
 
 var trex = function () {
-	return 'Hi. I\'m T-Rex. Read more about me at <http://www.qwantz.com/>.';
+	const sentence = 'Hi. I\'m T-Rex. Read more about me at <http://www.qwantz.com/>.';
+
+	return sentence;
 };
 
-module.exports = function (str, opts) {
-	opts = opts || {};
-
+module.exports = function (str) {
 	switch (str) {
 		case 'endorse':
 			return endorsement();
