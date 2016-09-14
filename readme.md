@@ -36,7 +36,7 @@ What do you want T-Rex to say?
 Supported:
 
 * (nothing)
-* endorse
+* endorse ([Dinosaur Comics #2025](http://www.qwantz.com/index.php?comic=2025))
 
 
 ## CLI
