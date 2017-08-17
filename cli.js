@@ -2,10 +2,10 @@
 
 'use strict';
 
-var meow = require('meow');
-var heytrex = require('./');
+const meow = require('meow');
+const heytrex = require('./');
 
-var cli = meow([
+const cli = meow([
 	'Usage',
 	'  $ heytrex [input]',
 	'',
