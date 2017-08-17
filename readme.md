@@ -20,6 +20,9 @@ heytrex();
 
 heytrex('endorse');
 //=> 'I just can't get enough of your free improved product that now saves society's cooking money.'
+
+heytrex('response');
+//=> 'It is what it is.'
 ```
 
 
@@ -36,7 +39,8 @@ What do you want T-Rex to say?
 Supported:
 
 * (nothing)
-* endorse ([Dinosaur Comics #2025](http://www.qwantz.com/index.php?comic=2025))
+* endorse ([Dinosaur Comics #2025](http://www.qwantz.com/?comic=2025))
+* response ([Dinosaur Comics #3175](http://www.qwantz.com/?comic=3175))
 
 
 ## CLI
@@ -56,6 +60,8 @@ $ heytrex --help
     Hi. I'm T-Rex. Read more about me at <http://www.qwantz.com/>.
     $ heytrex endorse
     I just can't get enough of your free improved product that now saves society's cooking money.
+    $ heytrex response
+    It is what it is.
 ```
 
 
