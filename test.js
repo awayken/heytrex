@@ -11,3 +11,9 @@ test('blank T-Rex', t => {
 test('endorses', t => {
 	t.regex(fn('endorse'), /^I just can't get enough of (.+)\.$/);
 });
+
+test('responses', t => {
+	t.true(fn('responses').length > 0);
+	t.true(fn('responses').length > 0);
+	t.true(fn('responses').length > 0);
+});

@@ -1,6 +1,6 @@
 {
   "name": "heytrex",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Make T-Rex from [Dinosaur Comics](http://www.qwantz.com/) say things.",
   "license": "MIT",
   "repository": "awayken/heytrex",
@@ -30,7 +30,7 @@
     "meow": "^3.7.0"
   },
   "devDependencies": {
-    "ava": "^0.15.1",
-    "xo": "^0.15.0"
+    "ava": "^0.22.0",
+    "xo": "^0.18.2"
   }
 }

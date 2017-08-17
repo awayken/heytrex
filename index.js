@@ -1,6 +1,21 @@
 'use strict';
 
-var endorsement = function () {
+// http://www.qwantz.com/?comic=3175
+const response = function () {
+	const responses = [
+		'It is what it is.',
+		'You know I can\'t talk about that.',
+		'Let\'s put a pin in that.',
+		'Check and mate.',
+		'You know I can\'t put a pin in that. It checks and mates what it checks and mates.'
+	];
+
+	const responseIndex = parseInt((Math.random() * 100), 10) % responses.length;
+
+	return responses[responseIndex];
+};
+
+const endorsement = function () {
 	const words = [
 		['the', 'this', 'a', 'your', 'you'],
 		['wonderful', 'amazing', 'valuable', 'free', 'proven'],
@@ -14,10 +29,10 @@ var endorsement = function () {
 		['performance', 'results', 'love', 'money', 'sex', 'career']
 	];
 
-	var sentence = 'I just can\'t get enough of';
+	let sentence = 'I just can\'t get enough of';
 
 	for (let i = 0; i < words.length; i++) {
-		let wordIndex = parseInt((Math.random() * 100), 10) % words[i].length;
+		const wordIndex = parseInt((Math.random() * 100), 10) % words[i].length;
 		sentence += ' ' + words[i][wordIndex];
 	}
 
@@ -26,7 +41,7 @@ var endorsement = function () {
 	return sentence;
 };
 
-var trex = function () {
+const trex = function () {
 	const sentence = 'Hi. I\'m T-Rex. Read more about me at <http://www.qwantz.com/>.';
 
 	return sentence;
@@ -36,6 +51,8 @@ module.exports = function (str) {
 	switch (str) {
 		case 'endorse':
 			return endorsement();
+		case 'response':
+			return response();
 		default:
 			return trex();
 	}
